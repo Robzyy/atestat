@@ -1,0 +1,44 @@
+:root{
+    --background-color: #120c0e;
+}
+
+body{
+    padding: 0;
+    font-family: 'Fira Code'
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fira Code'
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 3rem; */
+    /* border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid rosybrown; */
+}
+
+.navbar{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 3em;
+}
+
+.navbar>a{
+    border-top: 5px solid var(--background-color);
+    border-left: 5px solid var(--background-color);
+    border-right: 5px solid var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.navbar>a:hover{
+    border-top: 5px solid rosybrown;
+    border-bottom: 0;
+}
