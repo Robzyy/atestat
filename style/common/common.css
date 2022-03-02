@@ -1,29 +1,33 @@
-:root{
+:root {
     /* Color palette */
     --background-color: #ffffff;
     --accent-color: #007559;
-
     /* Fonts */
     --main-font: 'Fira code'
 }
 
-body{
+body {
     scroll-behavior: smooth;
     padding: 0;
     font-family: var(--main-font);
     max-width: 50em;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--main-font);
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
 }
 
-.navbar{
+.navbar {
     background-color: var(--background-color);
     border-bottom: 5px solid var(--accent-color);
     display: flex;
@@ -33,56 +37,57 @@ header{
     height: 3em;
 }
 
-.navbar>a{
+.navbar>a {
     border-top: 5px solid var(--background-color);
     border-bottom: 5px solid var(--background-color);
-
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20%;
 }
-.navbar>a:hover{
+
+.navbar>a:hover {
     border-bottom: 5px solid var(--accent-color);
 }
 
-.content{
+.content {
     padding: 0 2em;
 }
 
-
-footer{
+footer {
     background-color: #f7f7f7;
     padding: 0.8em;
-
+    position: relative;
+    bottom: 0;
     display: flex;
     justify-content: center;
 }
 
-footer>.section1{
+footer>.section1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer .fa-heart{
+footer .fa-heart {
     color: #e02828;
 }
 
-footer>.section1>.contact{
+footer>.section1>.contact {
     display: flex;
     justify-content: center;
 }
 
-footer>.section1>.contact>a, footer>.section1>.contact>p{
+footer>.section1>.contact>a,
+footer>.section1>.contact>p {
     margin: 0 20px;
     /* font-size: 25px; */
 }
 
-footer>.section1>.contact>*>i{
+footer>.section1>.contact>*>i {
     padding-right: 0.8em;
 }
 
-footer a:hover{
+footer a:hover {
     border-bottom: 0;
 }
