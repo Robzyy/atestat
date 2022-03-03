@@ -12,7 +12,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style/common/normalize.css" type="text/css">
-    <link rel="stylesheet" href="style/common/sakura/sakura-earthly.css" type="text/css">
+    <link rel="stylesheet" href="style/common/sakura/sakura-earthly.css" type="text/css" id="sakura-css">
     <link rel="stylesheet" href="style/common/common.css" type="text/css">
     <link rel="stylesheet" href="style/index.css" type="text/css">
 
@@ -30,33 +30,37 @@
     <header>
         <h1>Zidul Berlinului</h1>
     </header>
-    <nav class="navbar">
-        <a href="#">Context</a>
-        <a href="construirea.html">Construirea</a>
-        <a href="caderea.html">Căderea</a>
-        <a href="video.html">Video</a>
-    </nav>
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="#">Context</a>
+            <a href="construirea.html">Construirea</a>
+            <a href="caderea.html">Căderea</a>
+            <a href="video.html">Video</a>
+        </nav>
+    </div>
 
-    <div class="content">
-        <h2>Context</h2>
-        <p>După sfârșitul celui de-<a href="https://wikipedia.org">al Doilea Război Mondial<sup><i class="fa-solid fa-arrow-up-right-from-square"></i></sup></a> în Europa, Germania a fost divizată în patru zone de ocupație. Vechea capitală a Germaniei, Berlinul,
-            ca sediu al <strong>Comisiei
+    <div class="content-wrapper">
+        <div class="content">
+            <h2>Context</h2>
+            <p>După sfârșitul celui de-<a href="https://wikipedia.org">al Doilea Război Mondial<sup><i class="fa-solid fa-arrow-up-right-from-square"></i></sup></a> în Europa, Germania a fost divizată în patru zone de ocupație. Vechea capitală a Germaniei,
+                Berlinul, ca sediu al <strong>Comisiei
                 Aliate
                 de Control</strong>, a fost împărțită în patru zone de ocupație corespunzătoare. </p>
-        <p> Deși, la început, intențiile puterilor învingătoare erau de a guverna împreună Germania în granițele stabilite în anul 1947, izbucnirea <strong>Războiului Rece</strong> a făcut ca zonele de ocupație franceză, britanică și americană să fie unite
-            în Republica Federală Germania, în 1949. Ca ripostă, în zona de ocupație sovietică a Berlinului avea să fie proclamată, în același an, Republica Democrată Germania, cu capitala în Berlinul Răsăritean.</p>
+            <p> Deși, la început, intențiile puterilor învingătoare erau de a guverna împreună Germania în granițele stabilite în anul 1947, izbucnirea <strong>Războiului Rece</strong> a făcut ca zonele de ocupație franceză, britanică și americană să fie
+                unite în Republica Federală Germania, în 1949. Ca ripostă, în zona de ocupație sovietică a Berlinului avea să fie proclamată, în același an, Republica Democrată Germania, cu capitala în Berlinul Răsăritean.</p>
 
-        <div class="map-wrapper">
-            <img class="map" src="./assets/images/zone-mod.png" alt="Zone de ocupatie">
+            <div class="map-wrapper">
+                <img class="map" src="./assets/images/zone-mod.png" alt="Zone de ocupatie">
+            </div>
+
+            <h2>Imigrația masivă</h2>
+            <p>Din 1949 până în 1961, un mare număr de persoane, de la personalul cu studii superioare la muncitorii calificaţi, migra dinspre estul spre vestul Berlinului, în principal, datorită reconstrucţiei din vest, susţinută de fondurile <a href="https://ro.wikipedia.org/wiki/Planul_Marshall">Planului Marshall<sup><i class="fa-solid fa-arrow-up-right-from-square"></i></sup></a>.
+            </p>
+            <p> Numeroşi vest-berlinezi traversau graniţa în răsărit pentru a-şi face cumpărăturile în magazinele cu preţuri subvenţionate de stat, unde preţurile erau mult mai mici decât în vest. Această secătuire a resurselor umane şi economice ameninţa
+                Germania Răsăriteană cu colapsul economic. Acest fapt avea repercusiuni în întreg blocul răsăritean şi, în special, în Uniunea Sovietică, care subvenţiona economia est-germană şi care, la rândul ei, trebuia să asigure plata despăgubirilor
+                de război către URSS şi Polonia.
+            </p>
         </div>
-
-        <h2>Imigrația masivă</h2>
-        <p>Din 1949 până în 1961, un mare număr de persoane, de la personalul cu studii superioare la muncitorii calificaţi, migra dinspre estul spre vestul Berlinului, în principal, datorită reconstrucţiei din vest, susţinută de fondurile <a href="https://ro.wikipedia.org/wiki/Planul_Marshall">Planului Marshall<sup><i class="fa-solid fa-arrow-up-right-from-square"></i></sup></a>.
-        </p>
-        <p> Numeroşi vest-berlinezi traversau graniţa în răsărit pentru a-şi face cumpărăturile în magazinele cu preţuri subvenţionate de stat, unde preţurile erau mult mai mici decât în vest. Această secătuire a resurselor umane şi economice ameninţa Germania
-            Răsăriteană cu colapsul economic. Acest fapt avea repercusiuni în întreg blocul răsăritean şi, în special, în Uniunea Sovietică, care subvenţiona economia est-germană şi care, la rândul ei, trebuia să asigure plata despăgubirilor de război
-            către URSS şi Polonia.
-        </p>
     </div>
 
     <footer>
@@ -67,8 +71,11 @@
                 <p><i class="fa-brands fa-discord"></i>Robzyy#4132</p>
                 <a href="https://github.com/robzyy/atestat"><i class="fa-brands fa-github"></i>Source</a>
             </div>
+            <button onclick="switchSakuraTheme()">Change Theme</button>
         </div>
     </footer>
+
+    <script src="./scripts/themeChange.js"></script>
 </body>
 
 </html>

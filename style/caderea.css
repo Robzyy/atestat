@@ -1,12 +1,12 @@
-.quote1{
+.quote1 {
     border-left: 0;
 }
 
-.img1-wrapper{
+.img1-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.img1{
+.img1 {
     width: 500px;
 }

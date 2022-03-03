@@ -12,7 +12,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style/common/normalize.css" type="text/css">
-    <link rel="stylesheet" href="style/common/sakura/sakura-earthly.css" type="text/css">
+    <link rel="stylesheet" href="style/common/sakura/sakura-earthly.css" type="text/css" id="sakura-css">
     <link rel="stylesheet" href="style/common/common.css" type="text/css">
     <link rel="stylesheet" href="style/video.css" type="text/css">
 
@@ -29,20 +29,26 @@
     <header>
         <h1>Zidul Berlinului</h1>
     </header>
-    <nav class="navbar">
-        <a href="index.html">Context</a>
-        <a href="construirea.html">Construirea</a>
-        <a href="caderea.html">Căderea</a>
-        <a href="#">Video</a>
-    </nav>
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="index.html">Context</a>
+            <a href="construirea.html">Construirea</a>
+            <a href="caderea.html">Căderea</a>
+            <a href="#">Video</a>
+        </nav>
+    </div>
 
-    <div class="content">
-        <h2>Video</h2>
-        <video controls width="900px">
+    <div class="content-wrapper">
+
+        <div class="content">
+            <h2>Video</h2>
+            <video controls width="900px">
             <source src="./assets/videos/vid.mp4" type="video/mp4">
             <p>Your browser doesn't support HTML5 video.</p>
         </video>
+        </div>
     </div>
+
 
     <footer>
         <div class="section1">
@@ -52,9 +58,11 @@
                 <p><i class="fa-brands fa-discord"></i>Robzyy#4132</p>
                 <a href="https://github.com/robzyy/atestat"><i class="fa-brands fa-github"></i>Source</a>
             </div>
+            <button onclick="switchSakuraTheme()">Change Theme</button>
         </div>
     </footer>
 
+    <script src="./scripts/themeChange.js"></script>
 </body>
 
 </html>
