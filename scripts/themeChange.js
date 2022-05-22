@@ -72,7 +72,7 @@ function switchSakuraTheme() {
     // Change overall theme
     sakura.href = themes[current].href;
 
-    // Change my variables in /style/common/common.css
+    // Change my variables in ../style/common/common.css
     css.style.setProperty("--background-color", themes[current].backgroundColor);
     css.style.setProperty("--accent-color", themes[current].accentColor);
     css.style.setProperty("--secondary-background-color", themes[current].secondaryBackgroundColor);
