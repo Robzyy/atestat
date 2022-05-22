@@ -73,13 +73,16 @@ footer {
     position: relative;
     bottom: 0;
     display: flex;
+    flex-direction: row-reverse;
+    /* Quick fix */
     justify-content: center;
+    gap: 100px;
 }
 
 footer>.section1 {
     display: flex;
-    justify-content: space-evenly;
-    width: 500px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 footer .fa-heart {
@@ -103,4 +106,8 @@ footer>.section1>.contact>*>i {
 
 footer a:hover {
     border-bottom: 0;
+}
+
+footer>.section2>p {
+    margin: 0;
 }
